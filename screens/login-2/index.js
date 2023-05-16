@@ -181,9 +181,9 @@ const CheckBox = ({
   text
 }) => <TouchableOpacity onPress={onPress}>
     <View style={checkBoxStyles.checkBoxContainer}>
-      <View style={checkBoxStyles.iconContainer}>
+      <Pressable><View style={checkBoxStyles.iconContainer}>
         {selected && <Image source={require("./assets/checkbox.png")} style={checkBoxStyles.icon} />}
-      </View>
+      </View></Pressable>
       <Text style={checkBoxStyles.iconText}>{text}</Text>
     </View>
   </TouchableOpacity>;
