@@ -46,7 +46,7 @@ const Login2 = () => {
             <Pressable onPress={() => {}}><Image source={require("./assets/googleIcon.png")} style={styles.icon} /></Pressable>
           </View>
           <View style={styles.iconContainer}>
-            <Image source={require("./assets/fbIcon.png")} style={styles.icon} />
+            <Pressable><Image source={require("./assets/fbIcon.png")} style={styles.icon} /></Pressable>
           </View>
         </View>
       </View>
